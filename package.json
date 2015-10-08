@@ -1,0 +1,27 @@
+{
+  "name": "fakedarren-shopping-cart-example",
+  "version": "0.0.1",
+  "main": "dist/app.js",
+  "dependencies": {
+    "autoprefixer": "^6.0.3",
+    "body-parser": "^1.14.1",
+    "browserify": "^11.2.0",
+    "compression": "^1.6.0",
+    "cssnano": "^3.2.0",
+    "cssnext": "^1.8.4",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.11.3",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-postcss": "^6.0.0",
+    "gulp-react": "^3.0.1",
+    "gulp-watch": "^4.3.5",
+    "lodash": "^3.10.1",
+    "postcss-import": "^7.0.0",
+    "postcss-nested": "^1.0.0",
+    "react": "^0.13.3",
+    "slug": "^0.9.1",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

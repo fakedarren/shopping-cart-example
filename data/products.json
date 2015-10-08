@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "name": "Game of Thrones - House Stark",
+        "price": 99.99,
+        "category_id": 1
+    },
+    {
+        "id": 2,
+        "name": "Game of Thrones - House Lannister",
+        "price": 99.99,
+        "category_id": 1
+    },
+    {
+        "id": 3,
+        "name": "Game of Thrones - House Targaryen",
+        "price": 99.99,
+        "category_id": 1
+    },
+    {
+        "id": 4,
+        "name": "Lost - The Swan",
+        "price": 199.99,
+        "category_id": 1
+    },
+    {
+        "id": 5,
+        "name": "Adventure Time - Jake the Dog",
+        "price": 99.99,
+        "category_id": 1
+    },
+    {
+        "id": 6,
+        "name": "Jurassic Park",
+        "price": 149.99,
+        "category_id": 1
+    },
+    {
+        "id": 7,
+        "name": "Zelda - Royal Crest of Hyrule",
+        "price": 149.99,
+        "category_id": 2
+    },
+    {
+        "id": 8,
+        "name": "Zelda - Link",
+        "price": 149.99,
+        "category_id": 2
+    },
+    {
+        "id": 9,
+        "name": "Super Mario Bros - 1up",
+        "price": 149.99,
+        "category_id": 2
+    },
+    {
+        "id": 10,
+        "name": "Trellick Tower",
+        "price": 149.99,
+        "category_id": 3,
+        "description": "Trellick Tower is a 31-storey block of flats in North Kensington, Royal Borough of Kensington and Chelsea, London, England.[1] It was designed in the Brutalist style by architect Ernő Goldfinger,[2] after a commission from the Greater London Council in 1966, and completed in 1972. It is a Grade II* listed building and is 98 metres (322 ft) tall (120 metres (394 ft) including the communications mast)."
+    },
+    {
+        "id": 11,
+        "name": "Lenore, The Cute Little Dead Girl",
+        "price": 149.99,
+        "category_id": 4
+    }
+]

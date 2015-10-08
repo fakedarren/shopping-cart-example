@@ -1,0 +1,11 @@
+<div class="basket-summary">
+    {{#if basket}}
+    <ul>
+        {{#each basket}}
+        <li>{{this.product.name}} ({{this.quantity}})</li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>You have no items</p>
+    {{/if}}
+</div>

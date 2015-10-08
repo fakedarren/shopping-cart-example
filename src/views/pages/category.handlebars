@@ -1,0 +1,18 @@
+<div class="body-content">
+    <div class="main-content">
+        <ul class="product-list">
+        {{#each category.products}}
+            <li class="product-list-item">
+                <a href="/{{@root/category.id}}/{{slugged @root/category.name}}/{{this.id}}/{{slugged this.name}}">
+                    <img src="/img/products/{{this.id}}/tiny.jpg" alt="{{this.name}}" class="product-list-thumbnail" />
+                    <h2 class="product-list-items">{{this.name}}</h2>
+                    <p class="product-list-description">{{this.description}}</p>
+                </a>
+            </li>
+        {{/each}}
+        </ul>
+    </div>
+    <div class="related-content">
+    </div>
+</div>
+{{> basket}}

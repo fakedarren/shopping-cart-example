@@ -1,0 +1,44 @@
+@media (min-width: 1024px){
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .main-header {
+        width: 220px;
+    }
+
+    .body-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .main-content {
+        flex: 1;
+    }
+
+    .related-content {
+        background: blue;
+        height: 100px;
+    }
+
+    .basket-content {
+        background: #eee;
+        border-left: 1px solid #ddd;
+        width: 200px;
+    }
+
+    .main-footer {
+        background: #111;
+        border-top: 1px solid #333;
+        height: 50px;
+    }
+}
