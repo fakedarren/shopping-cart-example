@@ -1,14 +1,10 @@
 <header class="main-header">
     <img src="/img/logo.png" alt="Darazon - Low prices in Electronics, Books, Sports Equipment &amp; more" class="main-header-logo" />
     <ul class="main-menu">
-        <li class="main-menu-item"><a href="/">Home</a></li>
+        <li class="main-menu-item"><a href="/">{{> svg 'home'}} Home</a></li>
         {{#each categories}}
         <li class="main-menu-item"><a href="/{{this.id}}/{{slugged this.name}}">{{this.name}}</a></li>
         {{/each}}
-        <li class="main-menu-item">
-            <a href="/basket">
-                 Basket
-            </a>
-        </li>
+        <li class="main-menu-item"><a href="/basket">{{> svg 'basket'}} Basket</a></li>
     </ul>
 </header>

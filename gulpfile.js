@@ -5,10 +5,12 @@ var autoprefixer = require('autoprefixer'),
     cssnano = require('cssnano'),
     cssnext = require('cssnext'),
     gulp = require('gulp'),
+    inject = require('gulp-inject'),
     nested = require('postcss-nested'),
     postcss = require('gulp-postcss'),
     react = require('gulp-react'),
     source = require('vinyl-source-stream'),
+    svgstore = require('gulp-svgstore'),
     watch = require('gulp-watch');
 
 
@@ -48,8 +50,17 @@ gulp.task('copy-scripts', ['build-js'], function(){
 
 
 gulp.task('copy-svg', function(){
-    return gulp.src('src/public/svg/*')
-        .pipe(gulp.dest('dist/public/svg'));
+    var svgs = gulp.src('src/public/svg/*')
+        .pipe(svgstore({ inlineSvg: true }));
+
+    function fileContents(filePath, file){
+        return file.contents.toString();
+    };
+
+    return gulp
+        .src('src/views/partials/templates/inline_svg.handlebars')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('dist/views/partials'));
 });
 
 

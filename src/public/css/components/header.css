@@ -25,6 +25,10 @@
             color: #ddd;
         }
     }
+
+    svg {
+        display: none;
+    }
 }
 
 
@@ -49,6 +53,14 @@
 
         > a {
             line-height: 30px;
+        }
+
+        svg {
+            display: inline-block;
+            fill: #fff;
+            height: 16px;
+            vertical-align: middle;
+            width: 16px;
         }
     }
 }

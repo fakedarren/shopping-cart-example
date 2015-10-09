@@ -1,3 +1,12 @@
+.inline-svg {
+    display: none;
+    height: 0;
+    left: -9999px;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+}
+
 @media (min-width: 1024px){
     body {
         display: flex;
