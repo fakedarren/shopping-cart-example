@@ -35,6 +35,13 @@ module.exports = {
         return category;
     },
 
+    fetchOthersByCategoryId(category_id){
+        const all_categories = this.fetchAllCategories(),
+              other_categories = _.filter(all_categories, (x) => x.id != category_id);
+
+        return _.flatten(_.map(other_categories, (x) => x.products));
+    },
+
     fetchProductById(product_id){
         return _.find(products, (product) => {
             return product.id == product_id;

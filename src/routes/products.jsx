@@ -1,4 +1,5 @@
-const data = require('../helpers/get-data'),
+const _ = require('lodash'),
+      data = require('../helpers/get-data'),
       ProductDetails = require('../views/components/ProductDetails'),
       ProductList = require('../views/components/ProductList'),
       React = require('react');
@@ -9,12 +10,14 @@ module.exports = {
     category(req, res, next){
         const basket = req.session.basket,
               categories = data.fetchAllCategories(),
-              category = data.fetchCategoryById(req.params.category_id);
+              category = data.fetchCategoryById(req.params.category_id),
+              other_products = data.fetchOthersByCategoryId(req.params.category_id);
 
         res.render('pages/category', {
             basket: basket,
             categories: categories,
-            category: category
+            category: category,
+            other_products: _.sample(other_products, 6)
         });
     },
 

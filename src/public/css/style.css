@@ -3,4 +3,5 @@
 
 @import 'components/basket-summary';
 @import 'components/header';
+@import 'components/other-products-list';
 @import 'components/product-list';

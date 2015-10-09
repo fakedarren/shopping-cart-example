@@ -1,0 +1,19 @@
+
+
+.other-products-list-item {
+    float: left;
+    width: 33%;
+
+    > a {
+        display: flex;
+    }
+}
+
+.other-products-list-thumbnail {
+    width: 50px;
+}
+
+.other-products-list-name {
+    align-self: center;
+    flex: 1;
+}
