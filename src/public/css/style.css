@@ -2,6 +2,7 @@
 @import 'base/layout';
 
 @import 'components/basket-summary';
+@import 'components/footer';
 @import 'components/header';
 @import 'components/other-products-list';
 @import 'components/product-list';

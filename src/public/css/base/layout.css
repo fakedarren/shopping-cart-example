@@ -7,6 +7,18 @@
     width: 0;
 }
 
+.basket-content {
+    background: #eee;
+    border-top: 1px solid #ddd;
+    clear: both;
+}
+
+.main-footer {
+    background: #111;
+    border-top: 1px solid #333;
+    color: #fff;
+}
+
 @media (min-width: 1024px){
     body {
         display: flex;
@@ -40,14 +52,12 @@
     }
 
     .basket-content {
-        background: #eee;
         border-left: 1px solid #ddd;
+        border-top: 0;
         width: 200px;
     }
 
     .main-footer {
-        background: #111;
-        border-top: 1px solid #333;
         height: 50px;
     }
 }
