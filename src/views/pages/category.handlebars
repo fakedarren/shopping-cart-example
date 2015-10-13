@@ -1,30 +1,7 @@
 <div class="body-content">
     <div class="main-content">
-        <ul class="product-list">
-        {{#each category.products}}
-            <li class="product-list-item">
-                <a href="/{{@root/category.id}}/{{slugged @root/category.name}}/{{this.id}}/{{slugged this.name}}">
-                    <img src="/img/products/{{this.id}}/tiny.jpg" alt="{{this.name}}" class="product-list-thumbnail" />
-                    <h2 class="product-list-name">{{this.name}}</h2>
-                    <p class="product-list-description">{{this.description}}</p>
-                </a>
-            </li>
-        {{/each}}
-        </ul>
+        {{{html_product_list}}}
     </div>
-    {{#if other_products.length}}
-    <div class="related-content">
-        <ul class="other-products-list" data-length="{{other_products.length}}">
-        {{#each other_products}}
-            <li class="other-products-list-item">
-                <a href="/{{@root/category.id}}/{{slugged @root/category.name}}/{{this.id}}/{{slugged this.name}}">
-                    <img src="/img/products/{{this.id}}/tiny.jpg" alt="{{this.name}}" class="other-products-list-thumbnail" />
-                    <h3 class="other-products-list-name">{{this.name}}</h3>
-                </a>
-            </li>
-        {{/each}}
-        </ul>
-    </div>
-    {{/if}}
+    {{{html_related_products}}}
 </div>
-{{> basket}}
+{{{html_basket}}}

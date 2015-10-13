@@ -1,19 +1,6 @@
 <div class="body-content">
     <div class="main-content">
-        <ul class="product-list">
-        {{#each products}}
-            <li class="product-list-item">
-                <a href="/{{category.id}}/{{slugged category.name}}/{{this.id}}/{{slugged this.name}}">
-                    <picture class="product-list-thumbnail">
-                        <source media="(max-width: 500px)" srcset="/img/products/{{this.id}}/tiny.jpg" />
-                        <source media="(min-width: 501px)" srcset="/img/products/{{this.id}}/small.jpg" />
-                        <img src="/img/products/{{this.id}}/small.jpg" alt="{{this.name}}" />
-                    </picture>
-                    <h2 class="product-list-items">{{this.name}}</h2>
-                </a>
-            </li>
-        {{/each}}
-        </ul>
+        {{{html_home_product_list}}}
     </div>
 </div>
 {{> basket}}

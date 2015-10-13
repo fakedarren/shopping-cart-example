@@ -6,12 +6,12 @@ module.exports = React.createClass({
     render(){
         return (
             <ul className="product-list">
-            {this.props.product_list.products.map(product => {
-                const category_slug = slug(this.props.product_list.name, {lower: true}),
+            {this.props.home_product_list.map(product => {
+                const category_slug = slug(product.category.name, {lower: true}),
                       product_slug = slug(product.name, {lower: true});
 
                 const img_src = `/img/products/${product.id}/tiny.jpg`,
-                      url = `/${this.props.product_list.id}/${category_slug}/${product.id}/${product.name}`;
+                      url = `/${product.category.id}/${category_slug}/${product.id}/${product_slug}`;
 
                 return (
                     <li className="product-list-item">
@@ -21,9 +21,8 @@ module.exports = React.createClass({
                         </a>
                     </li>
                 );
-            })}
+            })};
             </ul>
         );
     }
 });
-

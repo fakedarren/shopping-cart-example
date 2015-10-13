@@ -1,13 +1,4 @@
 <div class="body-content">
-    <h2>{{product.name}}</h2>
-
-    <img src="/img/products/{{product.id}}/large.jpg" alt="{{product.name}}" style="max-width: 200px;" />
-
-    <form method="POST">
-        
-        <input type="text" name="product_id" value="{{product.id}}" />
-        <input type="text" name="quantity" value="1" />
-        <button type="submit">Submit</button>
-    </form>
+    {{{html_product_details}}}
 </div>
-{{> basket}}
+{{{html_basket}}}
