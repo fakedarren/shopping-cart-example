@@ -43,9 +43,9 @@ gulp.task('copy-images', function(){
 
 
 gulp.task('copy-scripts', ['build-js'], function(){
-    return browserify('dist/public/js/ui/components.js').bundle()
-        .pipe(source('components.js'))
-        .pipe(gulp.dest('dist/public/js/ui'));
+    return browserify('dist/public/js/client-side.js').bundle()
+        .pipe(source('client-side.js'))
+        .pipe(gulp.dest('dist/public/js'));
 });
 
 

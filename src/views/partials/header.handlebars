@@ -3,7 +3,9 @@
     <ul class="main-menu">
         <li class="main-menu-item"><a href="/">{{> svg 'home'}} Home</a></li>
         {{#each categories}}
-        <li class="main-menu-item"><a href="/{{this.id}}/{{slugged this.name}}">{{this.name}}</a></li>
+        <li class="main-menu-item">
+            <a href="/{{this.id}}/{{slugged this.name}}" data-category-id="{{this.id}}">{{this.name}}</a>
+        </li>
         {{/each}}
         <li class="main-menu-item"><a href="/basket">{{> svg 'basket'}} Basket</a></li>
     </ul>

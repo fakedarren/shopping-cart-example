@@ -5,7 +5,7 @@ const React = require('react'),
 module.exports = React.createClass({
     render(){
         return (
-            <ul className="product-list">
+            <ul className="product-list" data-product-list={JSON.stringify(this.props.product_list)}>
             {this.props.product_list.products.map(product => {
                 const category_slug = slug(this.props.product_list.name, {lower: true}),
                       product_slug = slug(product.name, {lower: true});
