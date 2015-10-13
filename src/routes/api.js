@@ -7,6 +7,12 @@ module.exports = {
         const category = data.fetchCategoryById(req.params.category_id);
 
         res.json(category);
+    },
+
+    product_details(req, res, next){
+        const product = data.fetchProductById(req.params.product_id);
+
+        res.json(product);
     }
 
 };

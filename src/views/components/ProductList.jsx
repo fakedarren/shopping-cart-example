@@ -14,8 +14,8 @@ module.exports = React.createClass({
                       url = `/${this.props.product_list.id}/${category_slug}/${product.id}/${product.name}`;
 
                 return (
-                    <li className="product-list-item">
-                        <a href={url}>
+                    <li key={product.id} className="product-list-item">
+                        <a href={url} data-product-id={product.id}>
                             <img src={img_src} alt={product.name} className="product-list-thumbnail" />
                             <h2 className="product-list-name">{product.name}</h2>
                         </a>

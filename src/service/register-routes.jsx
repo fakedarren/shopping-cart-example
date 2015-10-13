@@ -9,6 +9,7 @@ module.exports = {
     register(app){
         app.get('/', pages.home);
         app.get('/api/category/:category_id', api.category);
+        app.get('/api/product/:product_id', api.product_details);
         app.get('/basket', basket.list);
         app.get('/:category_id/:category_name', products.category);
         app.get('/:category_id/:category_name/:product_id/:product_name', products.details);
