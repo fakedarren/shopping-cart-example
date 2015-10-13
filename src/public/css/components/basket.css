@@ -1,0 +1,21 @@
+.basket-content {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+
+    .empty-message {
+        flex: 1;
+        font-size: 1.3rem;
+        line-height: 20px;
+        padding: 10px;
+        text-align: center;
+
+        svg {
+            fill: currentColor;
+            height: 16px;
+            vertical-align: middle;
+            width: 16px;
+        }
+    }
+}

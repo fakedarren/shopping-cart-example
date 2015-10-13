@@ -19,6 +19,11 @@
     color: #fff;
 }
 
+.related-content {
+    background: #f8f8f8;
+    padding: 10px 0;
+}
+
 @media (min-width: 1024px){
     body {
         display: flex;
@@ -44,11 +49,6 @@
 
     .main-content {
         flex: 1;
-    }
-
-    .related-content {
-        background: #f8f8f8;
-        height: 100px;
     }
 
     .basket-content {

@@ -1,8 +1,9 @@
 @import 'base/reset';
 @import 'base/layout';
 
-@import 'components/basket-summary';
+@import 'components/basket';
 @import 'components/footer';
 @import 'components/header';
 @import 'components/other-products-list';
+@import 'components/product-details';
 @import 'components/product-list';

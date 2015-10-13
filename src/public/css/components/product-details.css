@@ -1,0 +1,19 @@
+.product-details {
+    padding: 10px;
+}
+
+.product-details-image {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.product-details-add-to-basket {
+
+    svg {
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+    }
+}
